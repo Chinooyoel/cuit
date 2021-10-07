@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id='form'>
+        <label for='number'>Dni/Sociedad: </label>
+        <input type="number" name='number' id='number' min='10000000' max='99999999'> 
+        <input type="radio" name='gender' value="male" id="male" required>
+        <label for='male'>Masculino</label>
+        <input type="radio" name='gender' value="female" id="female" required>
+        <label for='female'>Femenino</label>
+        <input type="radio" name='gender' value="society" id="society" required>
+        <label for='society'>Sociedad</label>
+        <input type="submit" value='Generar'/>
+    </form>
+    <h1>Cuit: <span id='result'></span></h1>
+
+    <form id='form_validate'>
+        <label for='number'>CUiL/CUIT </label>
+        <input type="number" name='number' id='number' min='10000000000' max='99999999999'> 
+        <input type="submit" value='validar'/>
+    </form>
+    <h1>Cuit: <span id='result_validation'></span></h1>
+    <script src='./codigojs.js'></script>
+</body>
+</html>
